@@ -1,3 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+}
+
+select {
+    cursor: pointer;
+}
+
+.container {
+    width: 600px;
+    margin: 0;
+    padding: 70px 30px 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    background: #ffffff;
+    text-align: center;
+    gap: 10px;
+}
+
+
 /*Estilos ejercicio 1 NO MODIFICAR*/
 #ejercicio1 .contenedor {
     width: 25%;
@@ -23,6 +58,7 @@
 /*Coloque sus estilos para formar la bandera de Guatemala*/
 #ejercicio1 .contenedor {
     display: inline-flex;
+    width: 500px;
     height: 30vh;
 }
 
@@ -34,8 +70,8 @@
 /*Ejercicio 2*/
 #ejercicio2 .contenedor {
     display: flex;
+    width: 400px;
     flex-direction: column;
-    width: 25%;
     height: 50vh;
 }
 
@@ -106,7 +142,7 @@
 /*Ejercicio 3*/
 #ejercicio3 .contenedor {
     display: flex;
-    width: 25%;
+    width: 500px;
     height: 20vh;
     overflow: hidden;
 }
@@ -186,7 +222,7 @@
 /*Ejercicio 4*/
 #ejercicio4 .contenedor {
     display: flex;
-    width: 25%;
+    width: 500px;
     height: 30vh;
     background-color: #fecd00;
     flex-direction: column;
@@ -242,7 +278,7 @@
 /*Ejercicio 5*/
 #ejercicio5 .contenedor{
     display: flex;
-    width: 25%;
+    width: 500px;
     height: 33vh;
     background-color: #ed1d26;
     flex-direction: column;
