@@ -21,6 +21,7 @@ describe('ponerBandera', () => {
         <option value="Guatemala">Guatemala</option>
         <option value="India">India</option>
         <option value="Bajos">Bajos</option>
+        <option value="Francia">Francia</option>
         <option value="Suecia">Suecia</option>
         <option value="Suiza">Suiza</option>
       </select>
@@ -29,25 +30,26 @@ describe('ponerBandera', () => {
       <article id="ejercicio3"></article>
       <article id="ejercicio4"></article>
       <article id="ejercicio5"></article>
+      <article id="ejercicio6"></article>
     `);
     ponerBandera = loadPonerBandera(dom);
   });
 
   function getDisplays(document) {
-    return [1,2,3,4,5].map(i => document.getElementById(`ejercicio${i}`).style.display);
+    return [1,2,3,4,5,6].map(i => document.getElementById(`ejercicio${i}`).style.display);
   }
 
   test('shows Guatemala section only', () => {
     const { document } = dom.window;
     document.getElementById('listaBanderas').value = 'Guatemala';
     ponerBandera();
-    expect(getDisplays(document)).toEqual(['block','none','none','none','none']);
+    expect(getDisplays(document)).toEqual(['block','none','none','none','none','none']);
   });
 
   test('shows India section only', () => {
     const { document } = dom.window;
     document.getElementById('listaBanderas').value = 'India';
     ponerBandera();
-    expect(getDisplays(document)).toEqual(['none','block','none','none','none']);
+    expect(getDisplays(document)).toEqual(['none','block','none','none','none','none']);
   });
 });

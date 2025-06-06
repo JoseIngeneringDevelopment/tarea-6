@@ -298,3 +298,25 @@ select {
     height: 15%;
 }
 
+/*Ejercicio 6*/
+#ejercicio6 .contenedor {
+    display: flex;
+    width: 500px;
+    height: 20vh;
+}
+
+#ejercicio6 .parte1 {
+    background-color: #002654;
+    width: 33.33%;
+}
+
+#ejercicio6 .parte2 {
+    background-color: white;
+    width: 33.33%;
+}
+
+#ejercicio6 .parte3 {
+    background-color: #ce1126;
+    width: 33.33%;
+}
+
